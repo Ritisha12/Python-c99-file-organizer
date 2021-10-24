@@ -1,9 +1,5 @@
-# importing the required modules
-import os
-import shutil
-import time
+# importing the required modules od os, shutil, time
 
-# main function
 def main():
 
 	# initializing the count
@@ -20,8 +16,8 @@ def main():
 	# time.time() returns current time in seconds
 	seconds = time.time() - (days * 24 * 60 * 60)
 
-	# checking whether the file is present in path or not
-	if os.path.exists(path):
+	# checking whether the file is present in path or not by using os.path.exists(path) in a if condition
+	
 
 		# iterating over each and every folder and file in the path
 		for root_folder, folders, files in os.walk(path):
@@ -31,9 +27,7 @@ def main():
 
 				# removing the folder
 				remove_folder(root_folder)
-				deleted_folders_count += 1 # incrementing count
-
-				# breaking after removing the root_folder
+				# incrementing count of deleted_folders_count by  1 
 				break
 
 			else:
@@ -49,7 +43,7 @@ def main():
 
 						# invoking the remove_folder function
 						remove_folder(folder_path)
-						deleted_folders_count += 1 # incrementing count
+						# incrementing count of deleted_folders_count by  1 
 
 
 				# checking the current directory files
