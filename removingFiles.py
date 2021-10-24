@@ -1,4 +1,4 @@
-# importing the required modules od os, shutil, time
+# importing the required modules od os, shutil, time STEP1
 
 def main():
 
@@ -27,7 +27,7 @@ def main():
 
 				# removing the folder
 				remove_folder(root_folder)
-				# incrementing count of deleted_folders_count by  1 
+				# incrementing count of deleted_folders_count by  1 STEP2
 				break
 
 			else:
@@ -43,7 +43,7 @@ def main():
 
 						# invoking the remove_folder function
 						remove_folder(folder_path)
-						# incrementing count of deleted_folders_count by  1 
+						# incrementing count of deleted_folders_count by  1 STEP3
 
 
 				# checking the current directory files
@@ -73,7 +73,8 @@ def main():
 
 		# file/folder is not found
 		print(f'"{path}" is not found')
-		deleted_files_count += 1 # incrementing count
+		
+		# incrementing count of deleted_files_count by 1 STEP 4
 
 	print(f"Total folders deleted: {deleted_folders_count}")
 	print(f"Total files deleted: {deleted_files_count}")
