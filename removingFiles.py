@@ -1,6 +1,6 @@
 # importing the required modules od os, shutil, time STEP1
 
-def main():
+def main():  
 
 	# initializing the count
 	deleted_folders_count = 0
